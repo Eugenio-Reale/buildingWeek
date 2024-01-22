@@ -1,7 +1,7 @@
-let questionIndex = 0;
-const timeRange = 60; // da 1 a 10
-let clockSeconds = timeRange; // valore a caso, possiamo lasciare un minuto o decidere di cambiare a seconda della difficoltà
+let questionIndex = 0; // da 1 a 10
+let clockSeconds = 6; // valore a caso, possiamo lasciare un minuto o decidere di cambiare a seconda della difficoltà
 let score = 0;       //incrementa ad ogni risposta corretta
+const timeRange = 60;
 // populateQuestion()
 
 nextQuestion()
@@ -152,7 +152,6 @@ function showClock(){
     timerClock.textContent = clockSeconds;
     timerClock.classList.add("clock-big-text");
     remaining.textContent = "REMAINING";
- 
 
         if (clockText) {
         clockContainer.append(clockText);
